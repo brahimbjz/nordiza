@@ -1,3 +1,13 @@
-controllers:
-    resource: ../src/Controller/
-    type: attribute
+#controllers:
+#    resource: ../src/Controller/
+#    type: attribute
+
+planets:
+    path: /planets/{id}
+    controller: App\Controller\PlanetController::show
+    methods: GET
+
+planet:
+    path: /planet
+    controller: App\Controller\PlanetController::create
+    methods: POST
